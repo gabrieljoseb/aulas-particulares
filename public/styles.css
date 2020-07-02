@@ -60,7 +60,7 @@ header {
 /*=== TEACHERS ===*/
 .card {
     background-color: white;
-    width: 700px;
+    width: 800px;
     min-height: 500px;
     margin: 50px auto;
     display: grid;

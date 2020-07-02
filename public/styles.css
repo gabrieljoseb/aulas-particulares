@@ -68,18 +68,25 @@ header {
     box-shadow: 3px 3px 20px 2px black;
 }
 
+.avatar {
+    max-height: 500px;
+}
+
 .details {
-    margin-left: 20px;
+    margin: 20px 30px;
 }
 
 .details h3 {
     color: var(--primary-color);
-    font-size: 24px;
-    margin-top: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .information {
-    margin-top: 20px;
+    margin: 0 auto;
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .information div:nth-child(1) {
@@ -87,11 +94,22 @@ header {
     font-weight: bold;
     font-size: 16px;
     line-height: 26px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 .information div:nth-child(2) {
     font-weight: normal;
+    margin-top: 4px;
     font-size: 18px;
     line-height: 28px;
+}
+
+.information:last-child {
+    border: none;
+}
+
+.information .item span {
+    background-color: #fdef26;
+    border-radius: 16px;
+    padding: 4px 16px;
 }

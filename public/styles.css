@@ -60,8 +60,8 @@ header {
 /*=== TEACHERS ===*/
 .card {
     background-color: white;
-    width: 800px;
-    height: 600px;
+    width: 700px;
+    height: 500px;
     margin: 50px auto;
     display: grid;
     grid-template-columns: 4fr 6fr;

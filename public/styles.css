@@ -56,3 +56,14 @@ header {
     width: 100%;
     transition: width 300ms ease-in-out;
 }
+
+/*=== TEACHERS ===*/
+.card {
+    background-color: white;
+    width: 800px;
+    height: 600px;
+    margin: 32px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 3px 3px 20px 2px black;
+}

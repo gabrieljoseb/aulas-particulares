@@ -10,13 +10,13 @@
             <div class="information">
                 <div>Avatar url</div>
                 <div>
-                    <input type="url" name="avatar_url">
+                    <input type="url" name="avatar_url" placeholder="http://">
                 </div>
             </div>
             <div class="information">
                 <div>Nome completo</div>
                 <div>
-                    <input type="text" name="name">
+                    <input type="text" name="name" placeholder="Nome do professor">
                 </div>
             </div>
             <div class="information">
@@ -38,20 +38,18 @@
             </div>
             <div class="information">
                 <div>Tipo de aula</div>
-                <div>
-                    <span><input type="radio" name="modality" checked> Presencial</span>
-                    <span><input type="radio" name="modality"> À Distância</span>
+                <div class="modality">
+                    <span><input type="radio" name="modality" checked="checked">
+                        Presencial</span>
+                    <span><input type="radio" name="modality">
+                        À Distância</span>
                 </div>
             </div>
             <div class="information">
                 <div>Área de atuação</div>
                 <div class="item">
-                    <input type="text" name="lessons">
+                    <input type="text" name="lessons" placeholder="Separe as áreas por vírgula">
                 </div>
-            </div>
-            <div class="information">
-                <div>Desde</div>
-                <div>02/07/2019</div>
             </div>
 
             <button type="submit">Salvar</button>

@@ -2,6 +2,7 @@
 
 :root {
     --primary-color: #7159C1;
+    --secondary-color: #fdef26;
 }
 
 * {
@@ -120,7 +121,7 @@ header {
 }
 
 .information .item span {
-    background-color: #fdef26;
+    background-color: var(--secondary-color);
     border-radius: 16px;
     padding: 4px 16px;
     font-size: 14px;
@@ -128,4 +129,51 @@ header {
     font-weight: bold;
     text-transform: uppercase;
     margin-right: 8px;
+}
+
+/*=== FORM ===*/
+select,
+input {
+    outline: none;
+    font-size: 18px;
+    width: 100%;
+    font-weight: bold;
+}
+
+input::placeholder {
+    font-weight: bold;
+    color: #bbb;
+}
+
+input[type="text"] {
+    line-height: 28px;
+}
+
+/* select {
+    outline: none;
+    font
+} */
+
+.modality span {
+    margin-right: 16px;
+}
+
+input[type="radio"] {
+    width: auto;
+    margin-right: 1px;
+}
+
+button[type="submit"] {
+    background-color: var(--secondary-color);
+    margin-top: 8px;
+    width: 100%;
+    padding: 16px 0;
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px 1px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+    font-weight: bold;
+    letter-spacing: 1px;
 }

@@ -2,38 +2,60 @@
 
 {% block content %}
 
-    <form class="card" method="POST" action="/teachers">
+    <form class="card" method="POST" action="/teachers/create">
         <section class="avatar" style="background: url(https://source.unsplash.com/collection/517198/300x400) no-repeat center center / cover"></section>
         <section class="details">
             <h3>Professor(a)</h3>
 
             <div class="information">
-                <div>Nome completo</div>
-                <div>Gabriel José Ribeiro Corrêa de Sá Benevides</div>
+                <div>Avatar url</div>
+                <div>
+                    <input type="url" name="avatar_url">
+                </div>
             </div>
             <div class="information">
-                <div>Idade</div>
-                <div>21</div>
+                <div>Nome completo</div>
+                <div>
+                    <input type="text" name="name">
+                </div>
+            </div>
+            <div class="information">
+                <div>Data de nascimento</div>
+                <div>
+                    <input type="date" name="birth">
+                </div>
             </div>
             <div class="information">
                 <div>Grau de escolaridade</div>
-                <div>Superior (cursando)</div>
+                <div>
+                    <select name="degree">
+                        <option value="1" selected="selected">Ensino Médio Completo</option>
+                        <option value="2">Ensino Superior Completo</option>
+                        <option value="3">Mestrado</option>
+                        <option value="4">Doutorado</option>
+                    </select>
+                </div>
             </div>
             <div class="information">
                 <div>Tipo de aula</div>
-                <div>Presencial</div>
+                <div>
+                    <span><input type="radio" name="modality" checked> Presencial</span>
+                    <span><input type="radio" name="modality"> À Distância</span>
+                </div>
             </div>
             <div class="information">
-                <div>Acompanhamento</div>
+                <div>Área de atuação</div>
                 <div class="item">
-                    <span>Matemática</span>
-                    <span>Física</span>
+                    <input type="text" name="lessons">
                 </div>
             </div>
             <div class="information">
                 <div>Desde</div>
                 <div>02/07/2019</div>
             </div>
+
+            <button type="submit">Salvar</button>
+
         </section>
     </form>
 

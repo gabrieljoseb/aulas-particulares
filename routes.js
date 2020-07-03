@@ -6,11 +6,11 @@ routes.get("/", (req, res) => {
 })
 
 routes.get("/teachers", (req, res) => {
-    return res.render('/teachers/index')
+    return res.render('teachers/index')
 })
 
 routes.get("/teachers/create", (req, res) => {
-    return res.render('/teachers/create')
+    return res.render('teachers/create')
 })
 
 routes.post("/teachers/create", (req, res) => {
@@ -21,7 +21,7 @@ routes.post("/teachers/create", (req, res) => {
             return res.send('please, fill all the fields')
     }
 
-    return res.render(req.body)
+    return res.send(req.body)
 })
 
 routes.get("/students", (req, res) => {

@@ -1,0 +1,14 @@
+{
+  "teachers": [
+    {
+      "id": 1,
+      "avatar_url": "http://google.com",
+      "name": "Gabriel José Ribeiro Corrêa de Sá Benevides",
+      "birth": -13834886400000,
+      "degree": "college",
+      "modality": "remotely",
+      "lessons": "Economia, Matemática",
+      "created_at": 1593778637592
+    }
+  ]
+}

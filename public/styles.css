@@ -120,10 +120,10 @@ header {
     border: none;
 }
 
-.information .item span {
+.information span {
     background-color: var(--secondary-color);
     border-radius: 16px;
-    padding: 4px 16px;
+    padding: 8px 16px;
     font-size: 14px;
     color: rgba(88, 85, 85, 0.8);
     font-weight: bold;
@@ -164,16 +164,16 @@ input[type="radio"] {
 }
 
 button[type="submit"] {
-    background-color: var(--secondary-color);
-    margin-top: 8px;
+    background-color: var(--primary-color);
+    margin-top: 32px;
     width: 100%;
     padding: 16px 0;
     border-radius: 8px;
-    box-shadow: 1px 1px 3px 1px;
+    box-shadow: 1px 1px 3px 2px black;
     cursor: pointer;
     text-align: center;
     font-size: 16px;
-    color: #555;
+    color: #fff;
     font-weight: bold;
     letter-spacing: 1px;
 }

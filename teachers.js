@@ -1,6 +1,6 @@
 const fs = require('fs')
 const data = require('./data.json')
-const { age } = require('./utils')
+const { age, graduation } = require('./utils')
 
 exports.post = (req, res) => {
     const keys = Object.keys(req.body)
@@ -45,7 +45,8 @@ exports.show = (req, res) => {
 
     const teacher = {
         ...foundTeacher,
-        birth: age(foundTeacher.birth)
+        birth: age(foundTeacher.birth),
+        degree: graduation(foundTeacher.degree)
     }
 
     return res.render('teachers/show', { teacher })

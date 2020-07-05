@@ -32,3 +32,8 @@ exports.post = (req, res) => {
         return res.redirect('/teachers')
     })
 }
+
+exports.show = (req, res) => {
+
+    return res.render('teachers/show')
+}

@@ -46,7 +46,8 @@ exports.show = (req, res) => {
     const teacher = {
         ...foundTeacher,
         birth: age(foundTeacher.birth),
-        degree: graduation(foundTeacher.degree)
+        degree: graduation(foundTeacher.degree),
+        lessons: foundTeacher.lessons.split(',')
     }
 
     return res.render('teachers/show', { teacher })

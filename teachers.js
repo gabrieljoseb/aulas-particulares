@@ -1,5 +1,6 @@
 const fs = require('fs')
 const data = require('./data.json')
+const Intl = require('intl')
 const { age, graduation } = require('./utils')
 
 exports.post = (req, res) => {
@@ -47,7 +48,8 @@ exports.show = (req, res) => {
         ...foundTeacher,
         birth: age(foundTeacher.birth),
         degree: graduation(foundTeacher.degree),
-        lessons: foundTeacher.lessons.split(',')
+        lessons: foundTeacher.lessons.split(','),
+        created_at: new Intl.DateTimeFormat("pt-BR").format(foundTeacher.created_at)
     }
 
     return res.render('teachers/show', { teacher })

@@ -1,5 +1,6 @@
 const fs = require('fs')
 const data = require('./data.json')
+const { age } = require('./utils')
 
 exports.post = (req, res) => {
     const keys = Object.keys(req.body)
@@ -42,5 +43,10 @@ exports.show = (req, res) => {
 
     if (!foundTeacher) res.send('Could not find id')
 
-    return res.render('teachers/show', { teacher: foundTeacher })
+    const teacher = {
+        ...foundTeacher,
+        birth: age(foundTeacher.birth)
+    }
+
+    return res.render('teachers/show', { teacher })
 }

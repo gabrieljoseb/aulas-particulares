@@ -34,6 +34,13 @@ exports.post = (req, res) => {
 }
 
 exports.show = (req, res) => {
+    const { id } = req.params
 
-    return res.render('teachers/show')
+    const foundTeacher = data.teachers.find((teacher) => {
+        return id == teacher.id
+    })
+
+    if (!foundTeacher) res.send('Could not find id')
+
+    return res.render('teachers/show', { teacher: foundTeacher })
 }

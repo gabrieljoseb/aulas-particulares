@@ -149,11 +149,6 @@ input[type="text"] {
     line-height: 28px;
 }
 
-/* select {
-    outline: none;
-    font
-} */
-
 .modality span {
     margin-right: 16px;
 }
@@ -163,6 +158,7 @@ input[type="radio"] {
     margin-right: 1px;
 }
 
+a.button,
 button[type="submit"] {
     background-color: var(--primary-color);
     margin-top: 32px;
@@ -176,4 +172,9 @@ button[type="submit"] {
     color: #fff;
     font-weight: bold;
     letter-spacing: 1px;
+}
+
+a.button {
+    display: block;
+    text-decoration: none;
 }

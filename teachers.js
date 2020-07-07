@@ -75,7 +75,7 @@ exports.edit = (req, res) => {
 exports.put = (req, res) => {
     const { id } = req.body
 
-    const foundTeacher = data.teachers.filter(teacher => id == teacher.id)
+    const foundTeacher = data.teachers.find(teacher => id == teacher.id)
 
     if (!foundTeacher) return res.send('Teacher not found!')
 
@@ -91,5 +91,19 @@ exports.put = (req, res) => {
         if (err) return res.send('Write file error!')
 
         return res.redirect(`/teachers/${id}`)
+    })
+}
+
+exports.delete = (req, res) => {
+    const { id } = req.body
+
+    const filteredTeacher = data.teachers.filter(teacher => id != teacher.id)
+
+    data.teachers = filteredTeacher
+
+    fs.writeFile('data.json', JSON.stringify(data, null, 2), err => {
+        if (err) return res.send('Write file error!')
+
+        return res.redirect('/teachers')
     })
 }

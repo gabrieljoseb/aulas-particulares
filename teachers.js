@@ -1,7 +1,7 @@
 const fs = require('fs')
 const data = require('./data.json')
 const Intl = require('intl')
-const { age, graduation } = require('./utils')
+const { age, graduation, date } = require('./utils')
 
 exports.post = (req, res) => {
     const keys = Object.keys(req.body)
@@ -66,9 +66,7 @@ exports.edit = (req, res) => {
 
     const teacher = {
         ...foundTeacher,
-        birth: age(foundTeacher.birth),
-        lessons: foundTeacher.lessons.split(','),
-        created_at: new Intl.DateTimeFormat("pt-BR").format(foundTeacher.created_at)
+        birth: date(foundTeacher.birth)
     }
 
     return res.render('teachers/edit', { teacher })

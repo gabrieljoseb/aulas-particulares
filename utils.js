@@ -17,5 +17,8 @@ module.exports = {
         if (degree == 'college') return "Ensino Superior Completo"
         if (degree == 'masters') return "Mestrado"
         if (degree == 'doctorate') return "Doutorado"
+    },
+    date: (timestamp) => {
+        // some code
     }
 }

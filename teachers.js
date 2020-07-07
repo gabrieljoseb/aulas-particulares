@@ -85,7 +85,7 @@ exports.update = (req, res) => {
         birth: Date.parse(req.body.birth)
     }
 
-    data.teachers[id - 1] = teacher
+    data.teachers[Number(id) - 1] = teacher
 
     fs.writeFile('data.json', JSON.stringify(data, null, 2), err => {
         if (err) return res.send('Write file error!')

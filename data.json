@@ -5,10 +5,20 @@
       "avatar_url": "https://source.unsplash.com/collection/517198/300x400",
       "name": "Gabriel José Ribeiro",
       "birth": 926121600000,
-      "degree": "high-school",
+      "degree": "doctorate",
       "modality": "Remota",
       "lessons": "Tecnologia, Engenharia",
       "created_at": 1594082823348
+    },
+    {
+      "id": 2,
+      "avatar_url": "https://source.unsplash.com/collection/517198/300x400",
+      "name": "Gabriel José Ribeiro Corrêa de Sá Benevides",
+      "birth": 902275200000,
+      "degree": "masters",
+      "modality": "Remota",
+      "lessons": "Tecnologia, Engenharia, Academia",
+      "created_at": 1594084812985
     }
   ]
 }

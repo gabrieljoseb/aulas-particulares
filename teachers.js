@@ -64,5 +64,12 @@ exports.edit = (req, res) => {
 
     if (!foundTeacher) res.send('Could not find id')
 
-    return res.render('teachers/edit', { teacher: foundTeacher })
+    const teacher = {
+        ...foundTeacher,
+        birth: age(foundTeacher.birth),
+        lessons: foundTeacher.lessons.split(','),
+        created_at: new Intl.DateTimeFormat("pt-BR").format(foundTeacher.created_at)
+    }
+
+    return res.render('teachers/edit', { teacher })
 }

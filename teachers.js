@@ -62,7 +62,7 @@ exports.edit = (req, res) => {
         return id == teacher.id
     })
 
-    if (!foundTeacher) res.send('Could not find id')
+    if (!foundTeacher) return res.send('Could not find id')
 
     const teacher = {
         ...foundTeacher,
@@ -87,7 +87,7 @@ exports.update = (req, res) => {
 
     data.teachers[id - 1] = teacher
 
-    fs.writeFile('data.json', JSON.stringify('data', null, 2), err => {
+    fs.writeFile('data.json', JSON.stringify(data, null, 2), err => {
         if (err) return res.send('Write file error!')
 
         return res.redirect(`/teachers/${id}`)

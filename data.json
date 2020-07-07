@@ -3,12 +3,12 @@
     {
       "id": 1,
       "avatar_url": "https://source.unsplash.com/collection/517198/300x400",
-      "name": "Gabriel José Ribeiro Corrêa de Sá Benevides",
-      "birth": -13834886400000,
-      "degree": "college",
-      "modality": "remotely",
-      "lessons": "Economia, Matemática",
-      "created_at": 1593778637592
+      "name": "Gabriel José Ribeiro",
+      "birth": 926121600000,
+      "degree": "high-school",
+      "modality": "Remota",
+      "lessons": "Tecnologia, Engenharia",
+      "created_at": 1594082823348
     }
   ]
 }

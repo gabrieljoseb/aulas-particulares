@@ -54,3 +54,15 @@ exports.show = (req, res) => {
 
     return res.render('teachers/show', { teacher })
 }
+
+exports.edit = (req, res) => {
+    const { id } = req.params
+
+    const foundTeacher = data.teachers.find((teacher) => {
+        return id == teacher.id
+    })
+
+    if (!foundTeacher) res.send('Could not find id')
+
+    return res.render('teachers/edit', { teacher: foundTeacher })
+}

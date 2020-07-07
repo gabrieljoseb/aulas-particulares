@@ -42,7 +42,7 @@ exports.show = (req, res) => {
         return id == teacher.id
     })
 
-    if (!foundTeacher) res.send('Could not find id')
+    if (!foundTeacher) return res.send('Could not find id')
 
     const teacher = {
         ...foundTeacher,

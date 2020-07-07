@@ -3,7 +3,7 @@ module.exports = {
         const today = new Date()
         const birthDate = new Date(timestamp)
 
-        const age = today.getFullYear() - birthDate.getFullYear()
+        let age = today.getFullYear() - birthDate.getFullYear()
         const month = today.getMonth() - birthDate.getMonth()
         const day = today.getDate() - birthDate.getDate()
 
@@ -21,7 +21,7 @@ module.exports = {
     date: (timestamp) => {
         const stringDate = new Date(timestamp).toISOString()
         const date = stringDate.split('T')[0]
-        
+
         return date
     }
 }

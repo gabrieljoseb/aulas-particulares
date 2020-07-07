@@ -72,7 +72,7 @@ exports.edit = (req, res) => {
     return res.render('teachers/edit', { teacher })
 }
 
-exports.put = (req, res) => {
+exports.update = (req, res) => {
     const { id } = req.body
 
     const foundTeacher = data.teachers.find(teacher => id == teacher.id)

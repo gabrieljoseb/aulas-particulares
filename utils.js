@@ -19,6 +19,9 @@ module.exports = {
         if (degree == 'doctorate') return "Doutorado"
     },
     date: (timestamp) => {
-        // some code
+        const stringDate = new Date(timestamp).toISOString()
+        const date = stringDate.split('T')[0]
+        
+        return date
     }
 }

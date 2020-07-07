@@ -2,10 +2,10 @@
 
 {% block content %}
 
-    <form class="card" method="POST" action="/teachers/create">
+    <form class="card" method="POST" action="/teachers/create?_method=PUT">
         <section class="avatar" style="background: url(https://source.unsplash.com/collection/517198/300x400) no-repeat center center / cover"></section>
         <section class="details">
-            <h3>Professor(a)</h3>
+            <h3>Editar Professor(a)</h3>
 
             {% include 'teachers/fields.njk' %}
 

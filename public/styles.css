@@ -190,3 +190,20 @@ a.button {
     display: block;
     text-decoration: none;
 }
+
+/* INDEX VIEW */
+.table-content {
+    display: block;
+    box-sizing: border-box;
+}
+
+.table-content table {
+    padding: 40px;
+    text-align: left;
+}
+
+.table-content table thead tr th {
+    font-size: 14px;
+    color: #777;
+    text-transform: uppercase;
+}

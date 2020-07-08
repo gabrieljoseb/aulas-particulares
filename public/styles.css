@@ -199,13 +199,13 @@ a.button {
 }
 
 .table-content table {
-    text-align: left;
     border-spacing: 0;
     width: 100%;
 }
 
-.table-content table thead tr th {
+.table-content thead tr th {
     font-size: 14px;
+    text-align: left;
     color: #777;
     text-transform: uppercase;
 }
@@ -220,5 +220,17 @@ td, th {
     height: 40px;
     background-position: center;
     background-size: cover;
-    
+
+}
+
+tbody tr td:first-child {
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    align-items: center;
+}
+
+tbody tr td:first-child span {
+    border-radius: 50%;
+    box-shadow: 1px 1px 2px 1px black;
+    border: 1px solid white;
 }

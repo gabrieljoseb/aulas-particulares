@@ -1,7 +1,7 @@
 {
   "teachers": [
     {
-      "id": "1",
+      "id": 1,
       "avatar_url": "https://source.unsplash.com/collection/517198/300x400",
       "name": "Gabriel José Ribeiro Corrêa de Sá Benevides",
       "birth": 875836800000,
@@ -9,6 +9,16 @@
       "modality": "Remota",
       "lessons": "Tecnologia, Engenharia, Academia",
       "created_at": 1594157603976
+    },
+    {
+      "id": 2,
+      "avatar_url": "https://source.unsplash.com/collection/517198/300x400",
+      "name": "Caroline Lacerda",
+      "birth": 941587200000,
+      "degree": "masters",
+      "modality": "Presencial",
+      "lessons": "Direito, Filosofia, Sociologia",
+      "created_at": 1594241322296
     }
   ]
 }

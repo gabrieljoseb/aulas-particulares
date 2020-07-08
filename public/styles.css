@@ -132,6 +132,10 @@ header {
 }
 
 /*=== FORM ===*/
+form {
+    display: inline;
+}
+
 select,
 input {
     outline: none;
@@ -158,11 +162,14 @@ input[type="radio"] {
     margin-right: 1px;
 }
 
+button {
+    width: 49%;
+}
+
 a.button,
 button[type="submit"] {
     background-color: var(--primary-color);
     margin-top: 32px;
-    width: 100%;
     padding: 16px 0;
     border-radius: 8px;
     box-shadow: 1px 1px 3px 2px black;
@@ -174,12 +181,11 @@ button[type="submit"] {
     letter-spacing: 1px;
 }
 
+#form-delete button[type="submit"] {
+    background-color: lightcoral;
+}
+
 a.button {
     display: block;
     text-decoration: none;
-}
-
-#form-delete button[type="submit"] {
-    margin-top: 8px;
-    background-color: lightcoral;
 }

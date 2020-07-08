@@ -194,16 +194,31 @@ a.button {
 /* INDEX VIEW */
 .table-content {
     display: block;
+    padding: 40px;
     box-sizing: border-box;
 }
 
 .table-content table {
-    padding: 40px;
     text-align: left;
+    border-spacing: 0;
+    width: 100%;
 }
 
 .table-content table thead tr th {
     font-size: 14px;
     color: #777;
     text-transform: uppercase;
+}
+
+td, th {
+    border-bottom: 1px solid rgba(88, 85, 85, 0.397);
+    padding: 16px;
+}
+
+.table-content tbody tr td span {
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-size: cover;
+    
 }

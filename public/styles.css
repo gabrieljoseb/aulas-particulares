@@ -223,14 +223,28 @@ td, th {
 
 }
 
-tbody tr td:first-child {
+.table-content tbody tr td:first-child {
     display: grid;
     grid-template-columns: 64px 1fr;
     align-items: center;
 }
 
-tbody tr td:first-child span {
+.table-content tbody tr td:first-child span {
     border-radius: 50%;
     box-shadow: 1px 1px 2px 1px black;
     border: 1px solid white;
+}
+
+.table-content tbody tr td:last-child a {
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.table-content tbody tr td:last-child a:hover {
+    text-decoration: underline;
 }

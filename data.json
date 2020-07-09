@@ -7,7 +7,7 @@
       "birth": 875836800000,
       "degree": "college",
       "modality": "Remota",
-      "lessons": "Tecnologia, Engenharia, Academia",
+      "lessons": "Tecnologia, Engenharia",
       "created_at": 1594157603976
     },
     {
@@ -17,7 +17,11 @@
       "birth": 941587200000,
       "degree": "masters",
       "modality": "Presencial",
-      "lessons": "Direito, Filosofia, Sociologia",
+      "lessons": [
+        "Direito",
+        " Filosofia",
+        " Sociologia"
+      ],
       "created_at": 1594241322296
     }
   ]

@@ -48,7 +48,7 @@ exports.show = (req, res) => {
         ...foundTeacher,
         birth: age(foundTeacher.birth),
         degree: graduation(foundTeacher.degree),
-        lessons: foundTeacher.lessons.split(','),
+        lessons: String(foundTeacher.lessons).split(','),
         created_at: new Intl.DateTimeFormat("pt-BR").format(foundTeacher.created_at)
     }
 
@@ -110,5 +110,9 @@ exports.delete = (req, res) => {
 }
 
 exports.index = (req, res) => {
+    data.teachers.forEach(teacher => {
+        teacher.lessons = String(teacher.lessons).split(',')
+    })
+
     return res.render('teachers/index', { teachers: data.teachers })
 }

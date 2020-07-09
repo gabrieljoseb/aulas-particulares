@@ -19,7 +19,9 @@
                             {{ teacher.name }}
                         </td>
                         <td>{{ teacher.lessons }}</td>
-                        <td><a href="/teachers/{{ teacher.id }}">Ver</a></td>
+                        <td>
+                            <a href="/teachers/{{ teacher.id }}">Ver</a>
+                        </td>
                     </tr>
                 {% endfor %}
             </tbody>

@@ -210,6 +210,10 @@ a.button {
     text-transform: uppercase;
 }
 
+.table-content thead tr th:last-child {
+    text-align: center;
+}
+
 td, th {
     border-bottom: 1px solid rgba(88, 85, 85, 0.397);
     padding: 16px;
@@ -233,6 +237,10 @@ td, th {
     border-radius: 50%;
     box-shadow: 1px 1px 2px 1px black;
     border: 1px solid white;
+}
+
+.table-content tbody tr td:last-child {
+    text-align: center;
 }
 
 .table-content tbody tr td:last-child a {

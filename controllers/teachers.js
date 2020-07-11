@@ -3,6 +3,18 @@ const data = require('../data.json')
 const Intl = require('intl')
 const { age, graduation, date } = require('../utils')
 
+exports.index = (req, res) => {
+    data.teachers.forEach(teacher => {
+        teacher.lessons = String(teacher.lessons).split(',')
+    })
+
+    return res.render('teachers/index', { teachers: data.teachers })
+}
+
+exports.create = (req, res) => {
+    return res.render('teachers/create')
+}
+
 exports.post = (req, res) => {
     const keys = Object.keys(req.body)
 
@@ -107,12 +119,4 @@ exports.delete = (req, res) => {
 
         return res.redirect('/teachers')
     })
-}
-
-exports.index = (req, res) => {
-    data.teachers.forEach(teacher => {
-        teacher.lessons = String(teacher.lessons).split(',')
-    })
-
-    return res.render('teachers/index', { teachers: data.teachers })
 }

@@ -11,6 +11,10 @@ exports.index = (req, res) => {
     return res.render('students/index', { students: data.students })
 }
 
+exports.create = (req, res) => {
+    return res.render('students/create')
+}
+
 exports.post = (req, res) => {
     const keys = Object.keys(req.body)
 

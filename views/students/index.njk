@@ -7,24 +7,26 @@
             <thead>
                 <tr>
                     <th>Nome completo</th>
-                    <th>Acompanhamento</th>
+                    <th>Email</th>
+                    <th>Ano escolar</th>
                     <th>Ação</th>
                 </tr>
             </thead>
             <tbody>
-                {% for teacher in teachers %}
+                {% for student in students %}
                     <tr>
                         <td>
-                            <span style="background-image: url({{ teacher.avatar_url }})"></span>
-                            {{ teacher.name }}
+                            <span style="background-image: url({{ student.avatar_url }})"></span>
+                            {{ student.name }}
                         </td>
                         <td>
-                            {% for lesson in teacher.lessons %}
-                                <span>{{ lesson }}</span>
-                            {% endfor %}
+                            {{ student.email }}
                         </td>
                         <td>
-                            <a href="/teachers/{{ teacher.id }}">Ver</a>
+                            {{ student.degree }}
+                        </td>
+                        <td>
+                            <a href="/students/{{ student.id }}">Ver</a>
                         </td>
                     </tr>
                 {% endfor %}

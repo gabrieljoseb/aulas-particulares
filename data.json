@@ -7,7 +7,10 @@
       "email": "gjose.benevides@gmail.com",
       "birth": 642124800000,
       "degree": "3EM",
-      "class_load": "80"
+      "class_load": "80",
+      "lessons": [
+        "undefined"
+      ]
     }
   ],
   "teachers": [
@@ -28,11 +31,7 @@
       "birth": 941587200000,
       "degree": "masters",
       "modality": "Presencial",
-      "lessons": [
-        "Direito",
-        " Filosofia",
-        " Sociologia"
-      ],
+      "lessons": "Direito, Filosofia, Sociologia",
       "created_at": 1594241322296
     }
   ]

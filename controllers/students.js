@@ -1,7 +1,7 @@
 const fs = require('fs')
 const data = require('../data.json')
 const Intl = require('intl')
-const { age, graduation, date, grade } = require('../utils')
+const { date, grade } = require('../utils')
 
 exports.index = (req, res) => {
     data.students.forEach(student => {

@@ -23,21 +23,17 @@ exports.post = (req, res) => {
             return res.send('please, fill all the fields')
     }
 
-    let { avatar_url, name, birth, degree, modality, lessons } = req.body
-
     birth = Date.parse(birth)
-    const created_at = Date.now()
-    const id = Number(data.students.length + 1)
+
+    let id = 1
+    const lastStudent = data.students[data.students.length - 1]
+
+    if (lastStudent) id = lastStudent.id + 1
 
     data.students.push({
         id,
-        avatar_url,
-        name,
-        birth,
-        degree,
-        modality,
-        lessons,
-        created_at
+        ...req.body,
+        birth
     })
 
     fs.writeFile('data.json', JSON.stringify(data, null, 2), (err) => {

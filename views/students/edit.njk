@@ -4,18 +4,18 @@
 
     <div class="card">
 
-        <section class="avatar" style="background: url(https://source.unsplash.com/collection/517198/300x400) no-repeat center center / cover"></section>
+        <section class="avatar" style="background: url({{ student.avatar_url }}) no-repeat center center / cover"></section>
         <section class="details">
             <form method="POST" action="/teachers?_method=PUT">
-                <h3>Editar Professor(a)</h3>
+                <h3>Editar Aluno(a)</h3>
 
-                {% include 'teachers/fields.njk' %}
+                {% include 'students/fields.njk' %}
 
-                <input type="hidden" name="id" value="{{ teacher.id }}">
+                <input type="hidden" name="id" value="{{ student.id }}">
             </form>
 
-            <form action="/teachers?_method=DELETE" id="form-delete" method="POST">
-                <input type="hidden" name="id" value="{{ teacher.id }}">
+            <form action="/students?_method=DELETE" id="form-delete" method="POST">
+                <input type="hidden" name="id" value="{{ student.id }}">
                 <button type="submit">Deletar</button>
             </form>
         </section>

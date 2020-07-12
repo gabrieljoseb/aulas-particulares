@@ -88,8 +88,8 @@ exports.update = (req, res) => {
     const student = {
         ...foundStudent,
         ...req.body,
-        birth: Date.parse(req.body.birth),
-        id: Number(req.body.id)
+        id: Number(req.body.id),
+        birth: Date.parse(req.body.birth)
     }
 
     data.students[Number(id) - 1] = student

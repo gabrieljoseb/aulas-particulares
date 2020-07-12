@@ -6,7 +6,7 @@
 
         <section class="avatar" style="background: url({{ student.avatar_url }}) no-repeat center center / cover"></section>
         <section class="details">
-            <form method="POST" action="/teachers?_method=PUT">
+            <form method="POST" action="/students?_method=PUT">
                 <h3>Editar Aluno(a)</h3>
 
                 {% include 'students/fields.njk' %}

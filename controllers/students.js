@@ -23,7 +23,7 @@ exports.post = (req, res) => {
             return res.send('please, fill all the fields')
     }
 
-    birth = Date.parse(birth)
+    birth = Date.parse(req.body.birth)
 
     let id = 1
     const lastStudent = data.students[data.students.length - 1]

@@ -1,5 +1,15 @@
 {
-  "students": [],
+  "students": [
+    {
+      "id": 1,
+      "avatar_url": "https://source.unsplash.com/collection/517198/300x400",
+      "name": "Gabriel José Ribeiro",
+      "email": "gjose.benevides@gmail.com",
+      "birth": 642124800000,
+      "degree": "3EM",
+      "class_load": "80"
+    }
+  ],
   "teachers": [
     {
       "id": 1,

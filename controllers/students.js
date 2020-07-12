@@ -4,9 +4,7 @@ const Intl = require('intl')
 const { date, grade } = require('../utils')
 
 exports.index = (req, res) => {
-    data.students.forEach(student => {
-        student.lessons = String(student.lessons).split(',')
-    })
+    data.students.forEach(student => student.degree = grade(student.degree))
 
     return res.render('students/index', { students: data.students })
 }

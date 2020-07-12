@@ -1,0 +1,6 @@
+<script>
+    document.querySelector('#form-delete').addEventListener('submit', (event) => {
+        const confirmation = confirm('Deseja cancelar?')
+        if (!confirmation) event.preventDefault()
+    })
+</script>

@@ -54,7 +54,7 @@ exports.show = (req, res) => {
 
     const student = {
         ...foundStudent,
-        birth: age(foundStudent.birth),
+        birth: date(foundStudent.birth).birthday,
         degree: graduation(foundStudent.degree),
         lessons: String(foundStudent.lessons).split(','),
         created_at: new Intl.DateTimeFormat("pt-BR").format(foundStudent.created_at)

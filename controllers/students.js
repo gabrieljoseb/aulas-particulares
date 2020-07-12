@@ -72,7 +72,7 @@ exports.edit = (req, res) => {
         ...foundStudent,
         birth: date(foundStudent.birth).iso
     }
-
+    
     return res.render('students/edit', { student })
 }
 

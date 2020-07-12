@@ -35,7 +35,7 @@ module.exports = {
         }
     },
     grade: (degree) => {
-        if (degree.includes('EM')) return `${degree[0]}° ano do ensino fundamental`
+        if (degree.includes('EF')) return `${degree[0]}° ano do ensino fundamental`
         
         return `${degree[0]}° ano do ensino médio`
     }

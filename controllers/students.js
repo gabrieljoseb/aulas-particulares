@@ -1,7 +1,7 @@
 const fs = require('fs')
 const data = require('../data.json')
 const Intl = require('intl')
-const { age, graduation, date } = require('../utils')
+const { age, graduation, date, grade } = require('../utils')
 
 exports.index = (req, res) => {
     data.students.forEach(student => {
@@ -55,9 +55,7 @@ exports.show = (req, res) => {
     const student = {
         ...foundStudent,
         birth: date(foundStudent.birth).birthday,
-        degree: graduation(foundStudent.degree),
-        lessons: String(foundStudent.lessons).split(','),
-        created_at: new Intl.DateTimeFormat("pt-BR").format(foundStudent.created_at)
+        degree: grade(foundStudent.degree)
     }
 
     return res.render('students/show', { student })

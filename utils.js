@@ -33,5 +33,10 @@ module.exports = {
             iso: date,
             birthday: `${day}/${month}`
         }
+    },
+    grade: (degree) => {
+        if (degree.includes('EM')) return `${degree[0]}° ano do ensino fundamental`
+        
+        return `${degree[0]}° ano do ensino médio`
     }
 }

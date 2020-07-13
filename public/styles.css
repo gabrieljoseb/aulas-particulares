@@ -199,6 +199,20 @@ a.button {
     box-sizing: border-box;
 }
 
+.table-content a#create {
+    text-decoration: none;
+    background-color: var(--secondary-color);
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    display: inline-block;
+    border-radius: 4px;
+    color: black;
+}
+
+.table-content a#create:hover {
+    text-decoration: underline;
+}
+
 .table-content table {
     border-spacing: 0;
     width: 100%;
@@ -254,6 +268,7 @@ td, th {
     font-size: 12px;
 }
 
-.table-content tbody tr td:last-child a:hover {
+.table-content tbody tr td:last-child a:hover,
+.table-content a {
     text-decoration: underline;
 }

@@ -6,8 +6,17 @@
       "name": "Gabriel José Ribeiro",
       "email": "gjose.benevides@gmail.com",
       "birth": 642124800000,
-      "degree": "3EM",
+      "degree": "3° ano do ensino médio",
       "class_load": "80"
+    },
+    {
+      "id": 2,
+      "avatar_url": "https://source.unsplash.com/collection/517198/300x400",
+      "name": "Caroline Lacerda",
+      "email": "carolacerda03@gmail.com",
+      "birth": 941587200000,
+      "degree": "9EF",
+      "class_load": "60"
     }
   ],
   "teachers": [
@@ -18,7 +27,10 @@
       "birth": 875836800000,
       "degree": "college",
       "modality": "Remota",
-      "lessons": "Tecnologia, Engenharia",
+      "lessons": [
+        "Tecnologia",
+        " Engenharia"
+      ],
       "created_at": 1594157603976
     },
     {
@@ -28,7 +40,11 @@
       "birth": 941587200000,
       "degree": "masters",
       "modality": "Presencial",
-      "lessons": "Direito, Filosofia, Sociologia",
+      "lessons": [
+        "Direito",
+        " Filosofia",
+        " Sociologia"
+      ],
       "created_at": 1594241322296
     }
   ]
